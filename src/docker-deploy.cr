@@ -1,7 +1,8 @@
 # TODO: Write documentation for `Docker::Deploy`
+require "option_parser"
+
 module Docker::Deploy
   VERSION = "0.1.0"
-  require "option_parser"
 
   # TODO: Put your code here
   OptionParser.parse do |parser|
