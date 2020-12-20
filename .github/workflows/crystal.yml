@@ -21,4 +21,4 @@ jobs:
     - name: Run tests
       run: crystal spec
     - name: Build release
-      run: crystal build --release --static
+      run: shards --production build --release --static
