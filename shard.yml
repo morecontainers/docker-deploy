@@ -1,0 +1,17 @@
+name: docker-deploy
+version: 0.1.0
+
+authors:
+  - Henrik Holst <henrik.holst@outlook.com>
+
+targets:
+  docker-deploy:
+    main: src/docker-deploy.cr
+
+dependencies:
+  docker:
+    github: aca-labs/crystal-docker
+
+crystal: 0.35.1
+
+license: MIT
