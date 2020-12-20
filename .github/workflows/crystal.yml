@@ -26,8 +26,10 @@ jobs:
     - name: Build release
       run: shards --production build --release --static
 
+    - name: Strip release
+      run: strip bin/docker-release
+
     - uses: actions/upload-artifact@v2
       with:
         name: docker-deploy
         path: bin/docker-deploy
-        
